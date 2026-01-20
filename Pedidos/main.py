@@ -31,6 +31,7 @@ while True:
                     case 4:
                         val.limpiar()
                         mPedido.finalizarPedido()
+                        break
                     case 5:
                         val.limpiar()
                         mPedido.CancelarPedido()
@@ -60,4 +61,5 @@ while True:
         case 0:
             break
                 
+
         
