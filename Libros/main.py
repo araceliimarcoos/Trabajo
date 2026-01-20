@@ -22,7 +22,7 @@ while opcM!=0:
         case 2:
             funciones.consutaLibro()
         case 3:
-            print("C A N C E L A R   R E S E R V A") 
+            funciones.cancelarReserva()
         case 4:
             funciones.verLibros()
         case 5:

@@ -3,7 +3,7 @@ class Libros:
         self.__id = id
         self.__titulo = titulo
         self.__autor = autor
-        self.__estado = 'Disponible'
+        self.__estado = estado
     
     def __str__(self):
         return f"{self.__id} {self.__titulo} {self.__autor} {self.__estado}"
