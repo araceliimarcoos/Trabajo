@@ -88,31 +88,32 @@ def consultaLibro():
         print("No se ha encontrado el libro.")
         input("Presione Enter para intentar de nuevo")
         val.limpiar_consola()
-
+        
+##################################################################################################################
 def cancelarReserva():
     val.limpiar_consola()
     print("C A N C E L A R  R E S E R V A")
 
     id = int(input("Ingrese el ID del libro a cancelar la reserva: "))
-    libroEnc = False
+    libroEnc = False #Empezamos en false
 
-    for libros in listaLibros:
-        if libros.get_id() == id:
+    for libros in listaLibros: #Empieza a recorrer la lista de libros
+        if libros.get_id() == id: #Aki si si existe
             libroEnc = True
             val.limpiar_consola()
 
-            print("Datos del libro")
+            print("Datos del libro") #Mostramos los datos
             print(f"Titulo : {libros.get_titulo()}")
             print(f"Autor  : {libros.get_autor()}")
             print(f"Estado : {libros.get_estado()}")
 
-            if libros.get_estado() == "Disponible":
+            if libros.get_estado() == "Disponible": #Comparamos su disponibilidad | Disponible
                 print("\nEste libro no tiene una reserva activa.")
                 input("Presione Enter para continuar")
                 val.limpiar_consola()
                 return
 
-            elif libros.get_estado() == "Reservado":
+            elif libros.get_estado() == "Reservado": #Comparamos su disponibilidad | Reservado
                 print("\n¿Desea cancelar la reserva de este libro?")
                 print("(S) Sí")
                 print("(N) No")
@@ -134,7 +135,8 @@ def cancelarReserva():
         print("No se ha encontrado el libro.")
         input("Presione Enter para intentar de nuevo")
         val.limpiar_consola()
-
+        
+###############################################################################################################################
 def verLibros():
     val.limpiar_consola()
     print("\nL I S T A  D E  L I B R O S\n")
