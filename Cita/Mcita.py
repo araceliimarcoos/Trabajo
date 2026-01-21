@@ -1,7 +1,6 @@
 from Datos import citas
 from Cita import Cita
 import val
-from tabulate import tabulate
 
 numero=6
    
@@ -79,3 +78,4 @@ def ExisteCita(fecha, hora):
         if c.get_fecha() == fecha and c.get_hora() == hora:
             return True
     return False
+
