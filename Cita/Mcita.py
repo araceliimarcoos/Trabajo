@@ -2,6 +2,7 @@ from Datos import citas
 from Cita import Cita
 import val
 
+
 numero=6
    
 def AgendarCita():
@@ -56,7 +57,9 @@ def CancelarCita():
 
         if encontrado==False:
             print("No se encontró ninguna cita con ese número.")
-            input("Presione enter para intentar de nuevo")
+            r=input("Presione enter para intentar de nuevo o 0 para salir")
+            if r=="0":
+                break
         else:
             break  
 
@@ -78,4 +81,3 @@ def ExisteCita(fecha, hora):
         if c.get_fecha() == fecha and c.get_hora() == hora:
             return True
     return False
-
