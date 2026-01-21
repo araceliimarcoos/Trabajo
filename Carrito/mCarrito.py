@@ -4,10 +4,10 @@ from producto import producto
 from Datos import productos_disponibles
 import val
 
-carrito = {} # Esto es un diccionario con dos apartados --> "Producto": Cereal, "Cantidad": 2
+carrito = {} # Esto es un diccionario anidado, dentro tiene el id y 
 
 def MostrarProductos():
-    print("\nProductos:") #😴😴😴😴😴😴
+    print("\nProductos:") 
     for p in productos_disponibles:
         if p.get_status() == "si":
             print(f"ID: {p.get_id()} - {p.get_name()} - ${p.get_price()}")    
@@ -42,7 +42,14 @@ def Agregar():
         
 def Eliminar():
     print("\n---ELIMINAR PRODUCTOS---")
+    
+    for i in carrito.values():
+        prod = i["producto"]
+        cantidad = i["cantidad"]
+        print(f"ID: {prod.get_id()} - {prod.get_name()} - ${prod.get_price()} x {cantidad}")
+    
     id = val.intPositivos("Ingrese el ID del producto a eliminar: ")
+    
     #verificar existencia
     if id in carrito:
         Cantidad_eliminar = val.intPositivos(f"\nCantidad de {carrito[id]["producto"].get_name()} a eliminar: ") # creo q ya le voy agarrando la onda
