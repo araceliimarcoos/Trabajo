@@ -40,11 +40,11 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .sidebar-logo img {
-    width: 70px;
+    width: 160px;
 }
 
 .sidebar-logo span {
