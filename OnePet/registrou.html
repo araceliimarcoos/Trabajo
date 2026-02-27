@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnePet - Usuarios</title>
+    <link rel="stylesheet" href="registrou.css">
+</head>
+<body>
+
+    <!-- ================= LAYOUT PRINCIPAL ================= -->
+    <div class="layout">
+
+        <!-- ================= SIDEBAR ================= -->
+        <aside class="sidebar">
+
+            <!-- ===== LOGO ===== -->
+            <div class="sidebar-logo">
+                <!-- COLOCAR AQUÍ EL LOGO -->
+                <img src="imagenes/LOGO_ONEPET2.png" alt="OnePet Logo">
+            </div>
+
+            <!-- ===== MENÚ DE NAVEGACIÓN ===== -->
+            <nav class="sidebar-menu">
+                <ul>
+                    <li class="active">Dashboard</li>
+                    <li>Propietarios</li>
+                    <li>Mascotas</li>
+                    <li>Citas</li>
+                    <li>Consultas</li>
+                    <li>Hospitalización</li>
+                    <li>Medicamentos</li>
+                    <li>Pagos</li>
+                    <li>Reportes</li>
+                </ul>
+            </nav>
+
+        </aside>
+        <!-- ================= FIN SIDEBAR ================= -->
+
+
+        <!-- ================= CONTENIDO PRINCIPAL ================= -->
+        <div class="main">
+
+            <!-- ================= NAVBAR SUPERIOR ================= -->
+            <header class="topbar">
+
+                <h1>USUARIOS</h1>
+
+                <div class="topbar-right">
+                   
+
+                    <div class="user-info">
+                        <!-- COLOCAR AQUÍ LA IMAGEN DEL USUARIO -->
+                        <img src="imagenes/user.jpg" alt="Usuario">
+                        <div>
+                            <p class="user-name">Axel Islas</p>
+                            <span class="user-role">ADMINISTRADOR</span>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <!-- ================= FIN NAVBAR ================= -->
+
+
+            <!-- ================= CONTENIDO ================= -->
+            <main class="content">
+
+                <!-- ===== CARD FORMULARIO ===== -->
+                <section class="card">
+
+                    <h2>Nuevo Usuario</h2>
+
+                    <form class="user-form">
+
+                        <!-- TIPO DE USUARIO -->
+                        <div class="form-group">
+                            <label>Tipo de usuario</label>
+                            <select>
+                                <option>Any</option>
+                                <option>Administrador</option>
+                                <option>Recepcionista</option>
+                                <option>Propietario</option>
+                            </select>
+                        </div>
+
+                        <!-- FOLIO -->
+                        <div class="form-group">
+                            <label>Folio</label>
+                            <input type="text" placeholder="Ej: 000001">
+                        </div>
+
+                        <!-- CONTRASEÑA -->
+                        <div class="form-group">
+                            <label>Contraseña</label>
+                            <input type="password" placeholder="Ej: %%#%#%">
+                        </div>
+
+                        <!-- CONFIRMAR CONTRASEÑA -->
+                        <div class="form-group">
+                            <label>Confirmación de contraseña</label>
+                            <input type="password" placeholder="Ej: %%#%#%">
+                        </div>
+
+                        <!-- BOTONES -->
+                        <div class="form-actions">
+                            <button type="reset" class="btn-clear">
+                                Limpiar espacios
+                            </button>
+
+                            <button type="submit" class="btn-primary">
+                                Agregar usuario
+                            </button>
+                        </div>
+
+                    </form>
+
+                </section>
+                <!-- ===== FIN CARD ===== -->
+
+            </main>
+            <!-- ================= FIN CONTENIDO ================= -->
+
+        </div>
+        <!-- ================= FIN MAIN ================= -->
+
+    </div>
+    <!-- ================= FIN LAYOUT ================= -->
+
+</body>
+</html>
